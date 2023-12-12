@@ -14,7 +14,7 @@ try:
         linha = cursor.fetchone()
         print("Conectado ao banco de dados ", linha)
 
-        tabela = pd.read_excel('BDS.xlsx')
+        tabela = pd.read_excel('BD.xlsx')
        
             
             
@@ -56,7 +56,7 @@ try:
             tabela.loc[c,"Grupo"] = grupo[i]
         c+=1
     print(tabela)
-    tabela.to_excel('BDS.xlsx')
+    tabela.to_excel('BD.xlsx')
 
 
     con.commit()
